@@ -26,7 +26,6 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
 
-  background-color: var(--pale-blue);
   color: var(--desaturated-blue);
   min-height: 100vh;
   display: flex;
@@ -54,6 +53,11 @@ body {
   background-color: var(--white);
   border-radius: 1.5rem;
   overflow: hidden;
+}
+
+.main-image {
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
 }
 
 .main-content {
@@ -123,11 +127,14 @@ body {
 @media only screen and (max-width: 37.5em) {
   body {
     padding: 5rem;
+    background-image: linear-gradient(to bottom, hsla(228, 100%, 98%, 0.5), hsla(228, 100%, 98%, 0.5)), url(./images/pattern-background-mobile.svg);
   }
 
   .main-content {
     padding: 2rem;
   }
+
+  
 }
 
 @media only screen and (max-width: 25em) {
